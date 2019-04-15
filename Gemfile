@@ -33,7 +33,7 @@ gem 'popper_js'
 gem 'jquery-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem "rack-livereload", group: :development
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -64,3 +64,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :development, :test do
+  gem 'guard-livereload', '~> 2.5', require: false
+end
+

@@ -69,7 +69,7 @@
       return this._pageCollection;
     }
 
-  }
+  };
 
   /**
    * Constructor function of Slideshow.
@@ -121,7 +121,7 @@
       });
     }
 
-  }
+  };
 
   /**
    *
@@ -141,7 +141,7 @@
       easing: 'linear'
     });
 
-  }
+  };
 
   /**
    *
@@ -162,7 +162,7 @@
 
     }, this.config.autoplayDelay );
 
-  }
+  };
 
   /**
    *
@@ -175,7 +175,7 @@
 
     clearTimeout( this.autoplayTimeoutId );
 
-  }
+  };
 
   /**
    *
@@ -221,7 +221,7 @@
 
     });
 
-  }
+  };
 
   /**
    *
@@ -235,7 +235,7 @@
     if(!element || !element.length) return;
     this.slides.push( new HSTextSlide( element, config ) );
 
-  }
+  };
 
   /**
    *
@@ -256,7 +256,7 @@
 
     this._updateCarouselBounds();
     this.slides[this.currentIndex].show();
-  }
+  };
 
   /**
    *
@@ -277,7 +277,7 @@
 
     this._updateCarouselBounds();
     this.slides[this.currentIndex].show();
-  }
+  };
 
 
   /**
@@ -315,7 +315,7 @@
     this.element.addClass(this.config.activeSlideClass);
 
     this.textfx.show(this.config.effect);
-  }
+  };
 
   /**
    *
@@ -330,7 +330,7 @@
     this.element.removeClass(this.config.activeSlideClass);
 
     this.textfx.hide(this.config.effect);
-  }
+  };
 
   /**
    *

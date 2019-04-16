@@ -802,7 +802,7 @@
     }
 
     return this;
-  }
+  };
 
   /**
    * Hides the mega-menu item.
@@ -831,7 +831,7 @@
     }
 
     return this;
-  }
+  };
 
   /**
    * Shows the mega-menu item.

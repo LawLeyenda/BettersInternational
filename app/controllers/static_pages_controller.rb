@@ -15,4 +15,8 @@ class StaticPagesController < ApplicationController
   
   def bettersRDs
   end
+  
+  def whatsNew
+  
+  end
 end

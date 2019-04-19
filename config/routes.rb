@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
   get '/product', to: 'static_pages#product'
   get '/bettersRD', to:'static_pages#bettersRD'
+  get '/whatsNew', to: 'static_pages#whatsNew'
 end

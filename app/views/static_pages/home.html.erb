@@ -62,7 +62,7 @@
       <div class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
         <h2 class="h3 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-600">About Our Company</h2>
       </div>
-      <p class="lead">Unify <strong>creative</strong> technology company providing key digital services. Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+      <p class="lead" id = "homeDescription">Our <strong>state of the art</strong> research facility allows us to redefine healthy, great-tasting food. This is accomplished from the <strong>collegiality</strong> between our employees, environment, and investors.</p>
     </header>
 
     <div class="row">
@@ -524,3 +524,46 @@
   </div>
 </section>
 <!-- End Call To Action -->
+<script>
+    $(document).on('ready', function () {
+        // initialization of carousel
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+        // initialization of text animation (typing)
+        $(".u-text-animation.u-text-animation--typing").typed({
+            strings: [
+                "Kids",
+                "Baby",
+                "Natural",
+                "Slim",
+                "Power",
+                "Amazonic",
+            ],
+            typeSpeed: 60,
+            loop: true,
+            backDelay: 1500
+        });
+        // bold and italics #homeDescription
+
+
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+    $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+            event: 'hover',
+            pageContainer: $('.container'),
+            breakpoint: 991
+        });
+    });
+    $(window).on('resize', function () {
+        setTimeout(function () {
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+    });
+</script>

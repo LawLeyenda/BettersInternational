@@ -1900,14 +1900,16 @@ url('<%=font_path("cristmas.svg") %>') format('svg');
 	content: "\e069";
 }
 
+
 /* Electronics */
 @font-face {
 	font-family: "electronics";
-	src:url("electronics/webfont/fonts/electronics.eot");
-	src:url("electronics/webfont/fonts/electronics.eot?#iefix") format("embedded-opentype"),
-	url("electronics/webfont/fonts/electronics.woff") format("woff"),
-	url("electronics/webfont/fonts/electronics.ttf") format("truetype"),
-	url("electronics/webfont/fonts/electronics.svg#electronics") format("svg");
+  src:url('<%=font_path("electronics/webfont/fonts/electronics.eot") %>');
+  src:url('<%=font_path("electronics/webfont/fonts/electronics.eot") %>') format('truetype'),
+  url('<%=font_path("electronics/webfont/fonts/electronics.eot?#iefix") %>') format("embedded-opentype"),
+  url('<%=font_path("electronics/webfont/fonts/electronics.woff") %>' ) format('woff'),
+  url('<%=font_path("electronics/webfont/fonts/electronics.svg#electronics") %>') format('svg');
+
 	font-weight: normal;
 	font-style: normal;
 }

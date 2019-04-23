@@ -17,12 +17,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-
 </head>
 
 <body>
 <main>
-  <% if current_page?(home_path) || current_page?(root_path) || current_page?(bettersRD_path) || current_page?(contact_path) || current_page?(whatsNew_path) %>
+  <% if current_page?(home_path) || current_page?(root_path) || current_page?(contact_path) || current_page?(whatsNew_path) %>
     <%= render 'layouts/headerTransparent' %>
   <% else %>
     <%= render 'layouts/headerSolid'%>
@@ -47,7 +46,7 @@
             </a>
           </li>
           <li class="list-inline-item g-mx-5">
-            <a class="u-icon-v2 u-icon-size--sm g-font-size-16 g-color-white-opacity-0_8 g-color-white--hover g-bg-primary--hover g-brd-white-opacity-0_2 g-brd-primary--hover rounded-circle" href="#">
+            <a class="u-icon-v2 u-icon-size--sm g-font-size-16 g-color-white-opacity-0_8 g-color-white--hover g-bg-primary--hover g-brd-white-opacity-0_2 g-brd-primary--hover rounded-circle" href="https://www.youtube.com/channel/UCPl6wCK0gt3_4rwKGJ1XjBQ">
               <i class="fa fa-youtube"></i>
             </a>
           </li>
@@ -108,6 +107,7 @@
             <ul class="list-unstyled mb-0">
               <li class="g-mb-8">
                 <a class="g-color-white-opacity-0_8" href="#">25 Boulevard de Belgique, 98000 Monaco</a>
+                <br>
               </li>
               <li class="g-mb-8">
                 <a class="g-color-white-opacity-0_8" href="#">+37 (799) 907 414</a>
@@ -121,20 +121,20 @@
             <h2 class="h6 g-color-white text-uppercase g-font-weight-600 g-mb-20">Useful Links</h2>
             <ul class="list-unstyled mb-0">
               <li class="g-mb-8">
-                <%=link_to "Our Products", product_path, class: "g-color-white-opacity-0_8"%>
+                <%=link_to "Our Products", product_path, class: "g-color-white-opacity-0_8", method: :get%>
               </li>
               <li class="g-mb-8">
                 <%=link_to "What's New", whatsNew_path, class: "g-color-white-opacity-0_8",method: :get %>
               </li>
               <li class="g-mb-8">
-                <%=link_to "Betters R&D", bettersRD_path, class: "g-color-white-opacity-0_8"%>
+                <%=link_to "Betters R&D", bettersRD_path, class: "g-color-white-opacity-0_8", method: :get%>
               </li>
               <li>
-                <%=link_to "About us", about_path, class: "g-color-white-opacity-0_8"%>
+                <%=link_to "About us", about_path, class: "g-color-white-opacity-0_8", method: :get%>
               </li>
             </ul>
           </div>
-          <!-- End Footer Content -->
+
         </div>
       </div>
       <!-- End Footer Content -->
@@ -146,6 +146,7 @@
         <small class="g-font-size-default">2019 All right reserved. Fueled by <a class="g-color-white" href="#">BecomeWorldwide.</a>
         </small>
       </div>
+
       <!-- End Copyright -->
     </footer>
     <!-- End Footer -->

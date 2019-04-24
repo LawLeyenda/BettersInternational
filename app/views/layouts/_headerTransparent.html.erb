@@ -16,16 +16,17 @@
         <!-- End Responsive Toggle Button -->
 
         <!-- Logo -->
-        <a href="../../../index.html" class="navbar-brand">
+
+        <%=link_to root_path, class: "navbar-brand", method: :get do %>
           <%=image_tag("logobetters.png", alt: "Betters International Logo", id: "headerBetterLogo") %>
-        </a>
+        <% end %>
         <!-- End Logo -->
 
         <!-- Navigation -->
         <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
           <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
             <li class="nav-item g-mx-20--lg">
-              <%= link_to "Home", home_path, class: "nav-link px-0", method: :get%>
+              <%= link_to "Home", root_path, class: "nav-link px-0", method: :get%>
 
             </li>
             <li class="nav-item g-mx-20--lg">

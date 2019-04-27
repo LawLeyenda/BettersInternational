@@ -19,4 +19,33 @@ class StaticPagesController < ApplicationController
   def whatsNew
   
   end
+  
+  def beBaby
+  
+  end
+  
+  def beKids
+  
+  end
+  
+  def beNatural
+  
+  end
+  
+  def bePower
+  
+  end
+  
+  def beSlim
+  
+  end
+  
+  def BetterAmazonic
+  
+  end
+  
+  def Merryposa
+  
+  end
+  
 end

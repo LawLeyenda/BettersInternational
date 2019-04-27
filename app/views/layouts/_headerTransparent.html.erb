@@ -15,40 +15,7 @@
 
         <!-- End Responsive Toggle Button -->
 
-        <!-- Logo -->
-
-        <%=link_to root_path, class: "navbar-brand", method: :get do %>
-          <%=image_tag("logobetters.png", alt: "Betters International Logo", id: "headerBetterLogo") %>
-        <% end %>
-        <!-- End Logo -->
-
-        <!-- Navigation -->
-        <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
-          <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
-            <li class="nav-item g-mx-20--lg">
-              <%= link_to "Home", root_path, class: "nav-link px-0", method: :get%>
-
-            </li>
-            <li class="nav-item g-mx-20--lg">
-
-              <%= link_to "Our Products", product_path, class: "nav-link px-0" %>
-            </li>
-            <li class="nav-item g-mx-20--lg active">
-                <%= link_to "What's New", whatsNew_path, class: "nav-link px-0",method: :get %>
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item g-mx-20--lg">
-              <%= link_to "Betters R&D", bettersRD_path, class: "nav-link px-0", method: :get %>
-            </li>
-            <li class="nav-item g-mx-20--lg">
-              <%= link_to "About us", about_path, class: "nav-link px-0", method: :get%>
-            <li class="nav-item g-ml-20--lg g-mr-0--lg">
-              <%= link_to "Contact us", contact_path, class: "nav-link px-0", method: :get%>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <%=render 'layouts/header' %>
         <!-- End Navigation -->
       </div>
     </nav>
